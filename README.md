@@ -74,8 +74,13 @@ public:
   // Destructor
   ~MyAmazingClass();
 
-  // friend functions come next
-  friend Foo friend_fun(arg);
+  // friend functions come next and in general methods have docstrings
+  /**
+   * Doxygen style docstrings
+   *
+   * @param arg Meaningful destription.
+   */
+  friend Foo friend_fun(Arg arg);
   
   // Snake Case method name in alphabetical order
   double get_some_value();
