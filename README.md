@@ -24,7 +24,7 @@
 * The following snippet matches NESO (include) and NESO::Particles (which is consistent).
 
 ```
-// File names as MyAmazingClass.hpp/cpp
+// File names as MyAmazingClass.hpp/cpp or MeaningfulName.hpp for files containing groups of related standalone functions
 
 // PascalCase class name.
 class MyAmazingClass {
