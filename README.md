@@ -16,6 +16,8 @@
 * Prefer smart pointers over raw
 * Prefer stl containers over e.g. c-style arrays.
 * Headers in alphabetical order within groups: stl; nektar++; NESO-Particles etc.
+* Indentation is 2 spaces
+* Opening brace doesn't get its own line, closing brace does.
 
 ### WRS Philosophy/Position on class and method names
 * Python has PEP8 and this works well for the Python community.
@@ -71,7 +73,6 @@ public:
 
   // Destructor
   ~MyAmazingClass();
-
 
   // friend functions come next
   friend Foo friend_fun(arg);
