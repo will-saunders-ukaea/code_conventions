@@ -68,6 +68,13 @@ public:
   // Constructor, and other special methods, has to match class name.
   // Constructor and deferred constructors come first
   MyAmazingClass();
+
+  // Destructor
+  ~MyAmazingClass();
+
+
+  // friend functions come next
+  friend Foo friend_fun(arg);
   
   // Snake Case method name in alphabetical order
   double get_some_value();
@@ -75,7 +82,9 @@ public:
   // Snake Case attribute (preferred option) where a descriptive name is appropriate.
   // Public member variables are assumed to be accessed as part of the API without
   // getters / setters
-  // Member variables in alphabetical order (helps group like-malloced variables)
+  // Member variables in alphabetical order (helps group like-malloced variables):
+  //  - initilizer list member variables come first alphabetically
+  //  - then the rest
   int an_int_value;
 
   // Attribute where the name mirroring the maths with a capital may
