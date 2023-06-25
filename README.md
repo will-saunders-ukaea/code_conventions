@@ -88,9 +88,9 @@ public:
   // Snake Case attribute (preferred option) where a descriptive name is appropriate.
   // Public member variables are assumed to be accessed as part of the API without
   // getters / setters
-  // Member variables in alphabetical order (helps group like-malloced variables):
-  //  - initilizer list member variables come first alphabetically
-  //  - then the rest
+  // Member variables in sensible grouped order:
+  //  - initilizer list member variables come first
+  //  - then the rest in sensible groups
   int an_int_value;
 
   // Attribute where the name mirroring the maths with a capital may
