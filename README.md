@@ -41,8 +41,19 @@ typedef std::shared_ptr<MyAmazingClass> MyAmazingClassSharedPtr;
 
 * Prefer class variable prefix to give information an IDE might not be able to deduce or the programmer read from the header file, e.g. is `TypeName m_foo;` a host type or a device type? Programmers should know what is in their scope and the API docs provide this information to users.
 * Public vs protected with getter/setter is a separate discussion to naming style - see later section.
-## General Specification Through Example
+* If you use PascalCase for both types and functions you can potentially loose information
 
+```
+// which one of these is a class constructor and which is a function call?
+foo(
+  ThingOne(a,b,c),
+  ThingTwo(x,y)
+);
+
+```
+
+
+## General Specification Through Example
 
 Prototype code style to match Python PEP8.
 
